@@ -5,247 +5,424 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Estatemark — Real-time land plot visualization, instant booking management, and multi-user synchronization. Prevent double-bookings and manage properties securely across all devices.">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/logo.png">
-  <link rel="apple-touch-icon" href="images/logo.png">
-  <title>Home|Estatemark – Property Booking App</title>
-  <!-- Fonts -->
+    content="Estatemark — Real-time property inventory and booking management for builders and developers. Visualize plots, flats, and villas, prevent double-bookings, and synchronize sales teams across all devices.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" type="image/jpeg" sizes="192x192" href="images/logo-symbol.jpg">
+  <link rel="apple-touch-icon" href="images/logo-symbol.jpg">
+  <title>Home | Estatemark – Real-Time Property Booking & Inventory Platform</title>
+
+  <!-- Google Fonts: Inter & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
     rel="stylesheet">
 
+  <!-- Core Stylesheet -->
   <link rel="stylesheet" href="css/estatemark_styles.css">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <!-- Accessible Skip Link -->
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <!-- Header -->
+
+  <!-- Header & Navigation -->
   <header>
     <div class="container nav">
       <div class="logo-container">
-        <img src="images/logo.png" alt="Estatemark Logo" class="logo">
-        <span class="brand-name">Estatemark</span>
+        <a href="index.html" class="logo-link">
+          <img src="images/logo-symbol.jpg" alt="Estatemark Symbol" class="logo">
+          <div class="logo-brand-wrap">
+            <img src="images/logo-name.png" alt="Estatemark" class="logo">
+            <span class="logo-tagline">Mark Smart. Track Live. Sell Faster.</span>
+          </div>
+        </a>
       </div>
       <nav aria-label="Primary" role="navigation">
-        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-          <!--<span class="sr-only">Toggle navigation</span>-->
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation menu">
           <span class="hamburger" aria-hidden="true"></span>
         </button>
         <ul id="primary-navigation" class="nav-links">
           <li><a href="index.html" class="active" aria-current="page">Home</a></li>
           <li><a href="product.htm">Product</a></li>
+          <li><a href="pricing.htm">Pricing</a></li>
+          <li><a href="about.htm">About Us</a></li>
           <li><a href="contact.htm">Contact Us</a></li>
+          <li class="nav-call"><a class="nav-call-link" href="tel:+919000035869" data-tooltip="Call" aria-label="Call +91 90000 35869"><i class="fa fa-phone" aria-hidden="true"></i><span class="nav-call-number">+91 90000 35869</span></a></li>
+          <li class="nav-download"><a class="nav-download-link" href="#download" data-tooltip="Download App" aria-label="Download App"><i class="fa fa-download" aria-hidden="true"></i><span class="nav-download-text">Download App</span></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Main Content -->
   <main id="main-content">
+
+    <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <p class="tagline">🚀 Digital Property Booking Revolution</p>
-        <h1 id="hero-title">Book Plots, Flats & Villas with <span>Real-Time Insights</span></h1>
-        <p class="subtitle">Real-time visualization, Instant availability visibility, clash-free reservations, and
+        <h1 id="hero-title">Book Plots, Flats &amp; Villas<br><span>with Real-Time Insights</span></h1>
+        <p class="subtitle">
+          Real-time visualization, Instant availability visibility, clash-free reservations, and
           synchronized access for teams managing plots, flats, and villas across projects.
         </p>
         <div class="hero-cta">
           <a href="#"
-            onclick="openPopupArgs('https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7RcqfMHILnU_fDAV8c212EniR1pbsdqpi6rxOKt4ytL_M5g/formResponse', 'entry.1639588951', 'entry.941023126', 'entry.1095327185', 'entry.1040563809', 'entry.80962579')"
+            onclick="openPopupArgs('https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7RcqfMHILnU_fDAV8c212EniR1pbsdqpi6rxOKt4ytL_M5g/formResponse', 'entry.1639588951', 'entry.941023126', 'entry.1095327185', 'entry.1040563809', 'entry.80962579'); return false;"
             class="cta primary">Request Demo</a>
-          <a href="product.htm" class="cta secondary">Learn More</a>
+          <a href="product.htm" class="cta secondary">Explore Features</a>
         </div>
         <ul class="stats" aria-label="Key metrics">
           <li>
-            <h3>100+</h3>
+            <h3><i class="fa fa-map-o" aria-hidden="true"></i> 100+</h3>
             <p>Active Layouts</p>
           </li>
           <li>
-            <h3>5000+</h3>
+            <h3><i class="fa fa-building-o" aria-hidden="true"></i> 5000+</h3>
             <p>Plots Managed</p>
           </li>
           <li>
-            <h3>99.9%</h3>
+            <h3><i class="fa fa-clock-o" aria-hidden="true"></i> 99.9%</h3>
             <p>Uptime SLA</p>
+          </li>
+          <li>
+            <h3><i class="fa fa-handshake-o" aria-hidden="true"></i> 100+</h3>
+            <p>Trusted Partners</p>
+          </li>
+          <li>
+            <h3><i class="fa fa-building" aria-hidden="true"></i> 600</h3>
+            <p>Apartment Communities</p>
+          </li>
+          <li>
+            <h3><i class="fa fa-home" aria-hidden="true"></i> 9</h3>
+            <p>Villa Communities</p>
           </li>
         </ul>
       </div>
+
+      <nav class="hero-3d" aria-label="Explore property types">
+        <a class="hero-3d-card" href="#cat-plotted-land">
+          <img src="images/hero-plot.jpg" width="800" height="500" alt="Rendered aerial view of a plotted residential layout with internal roads and landscaping">
+          <span class="hero-3d-text"><strong>Plot</strong><span>Plotted Land <i class="fa fa-arrow-down" aria-hidden="true"></i></span></span>
+        </a>
+        <a class="hero-3d-card" href="#cat-gated-enclaves">
+          <img src="images/hero-villa.jpg" width="800" height="500" alt="Rendered modern two-storey villa with landscaped garden and pool">
+          <span class="hero-3d-text"><strong>Villa</strong><span>Gated Enclaves <i class="fa fa-arrow-down" aria-hidden="true"></i></span></span>
+        </a>
+        <a class="hero-3d-card" href="#cat-apartment-towers">
+          <img src="images/hero-flats.jpg" width="800" height="500" alt="Rendered modern apartment building with balconies and landscaped surroundings">
+          <span class="hero-3d-text"><strong>Flats</strong><span>Apartment Towers <i class="fa fa-arrow-down" aria-hidden="true"></i></span></span>
+        </a>
+      </nav>
     </section>
 
-
-
-    <!-- Mission Section -->
-    <section class="mission">
-      <h2>Why Estatemark?</h2>
-      <div class="mission-content">
+    <!-- SECTION: PLOTS, FLATS & VILLAS PROMOTIONAL CATEGORY SHOWCASE -->
+    <section class="property-categories-section container" id="property-categories" aria-labelledby="categories-heading">
+      <div class="section-header text-center">
+        <span class="section-pill"><i class="fa fa-th-large" aria-hidden="true"></i> Multi-Category Inventory Management</span>
+        <h2 id="categories-heading" class="section-title">Built for Plots, Flats &amp; Villas</h2>
         <p class="section-desc">
-          Built for modern real estate teams. Estatemark combines powerful functionality with elegant simplicity,
-          enabling developers, agents, and admins to manage plots with confidence and clarity.
+          Whether you are marketing plotted land developments, high-rise apartment towers, or gated villa communities,
+          EstateMark delivers real-time visibility, automated status synchronization, and zero double-booking assurance.
         </p>
-        <div class="mission-grid">
-          <div class="mission-card">
-            <h3>✓ Why Choose Us</h3>
-            <ul>
-              <li><strong>Real-Time Sync:</strong> Instant data synchronization across all devices — eliminate
-                double-bookings and outdated information.</li>
-              <li><strong>Smart Analytics:</strong> Detailed insights into availability, booking trends, and revenue
-                opportunities.</li>
-              <li><strong>Role-Based Access:</strong> Secure, controlled permissions for managers, agents, and
-                customers.</li>
-              <li><strong>Multi-Project Support:</strong> Manage unlimited layouts and thousands of plots with ease.
-              </li>
-              <li><strong>Mobile First:</strong> Full functionality on Android and iOS for teams on the go.</li>
-              <li><strong>99.9% Uptime:</strong> Enterprise-grade reliability you can depend on.</li>
-            </ul>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Card 1: Plots -->
+        <article class="category-card" id="cat-plotted-land" aria-labelledby="cat-plots-title">
+          <div class="category-card-header">
+            <div class="category-icon-box plots-icon">
+              <i class="fa fa-map-o" aria-hidden="true"></i>
+            </div>
+            <span class="category-badge">Plotted Land</span>
           </div>
-          <div class="mission-card">
-            <h3>🎯 Our Vision</h3>
-            <p>We're transforming real estate by making property data intelligent and accessible. Every booking, every
-              plot, every decision — backed by real-time information and powered by technology that works as hard as you
-              do.</p>
-            <p>No more spreadsheets. No more confusion. No more lost sales because information wasn't available. Just
-              clarity, precision, and the confidence that every plot is accounted for and every customer is satisfied.
-            </p>
-            <p>We believe that when property management becomes effortless, businesses thrive. That's why we built
-              Estatemark — for teams that refuse to compromise on accuracy or efficiency.</p>
+          <h3 id="cat-plots-title">Plotted Layouts &amp; Land Projects</h3>
+          <p class="category-lead">
+            Comprehensive spatial visualization and inventory management engineered specifically for land promoters and plotted township developments.
+          </p>
+          <ul class="category-features">
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Interactive Master Layouts:</strong>
+                <span>Explore the original layout of the property to easily understand plot locations, available plots, and the overall arrangement.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Color-Coded Status Tracking:</strong>
+                <span>Instant visibility into Available (Green), On Hold (Amber), Booked (Blue), and Blocked (Purple) plots across the entire layout.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Orientation &amp; Dimension Clarity:</strong>
+                <span>Review plot dimensions, total square yards, cardinal facings (East, West, North, South), and internal road widths (30', 40', 60').</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Plot Availability Overview:</strong>
+                <span>View plot details and availability information in an organized layout to help customers identify suitable plots.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="category-footer">
+            <span class="category-tag">Zero Double-Booking Guarantee</span>
           </div>
-        </div>
+        </article>
+
+        <!-- Card 2: Villas -->
+        <article class="category-card" id="cat-gated-enclaves" aria-labelledby="cat-villas-title">
+          <div class="category-card-header">
+            <div class="category-icon-box villas-icon">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <span class="category-badge">Gated Enclaves</span>
+          </div>
+          <h3 id="cat-villas-title">Villas &amp; Luxury Communities</h3>
+          <p class="category-lead">
+            High-touch inventory management and construction progress alignment for premium gated villa projects, row houses, and luxury enclaves.
+          </p>
+          <ul class="category-features">
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Phase-Wise Villa Mapping:</strong>
+                <span>Manage individual villa plots, distinct elevation designs, and phased community releases with complete status transparency.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Milestone &amp; Stage Tracking:</strong>
+                <span>Track booking milestones, foundation progress, structure completion, and customer handover stages alongside inventory states.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Elevated Client Presentation:</strong>
+                <span>Equip senior relationship managers with sleek mobile and tablet presentations showcasing exact orientation, clubhouses, and green zones.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Property Details at a Glance:</strong>
+                <span>Review key details about available properties, including plot information and relevant layout details, in one convenient place.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="category-footer">
+            <span class="category-tag">Phase &amp; Milestone Tracking</span>
+          </div>
+        </article>
+
+        <!-- Card 3: Flats -->
+        <article class="category-card" id="cat-apartment-towers" aria-labelledby="cat-flats-title">
+          <div class="category-card-header">
+            <div class="category-icon-box flats-icon">
+              <i class="fa fa-building-o" aria-hidden="true"></i>
+            </div>
+            <span class="category-badge">Apartment Towers</span>
+          </div>
+          <h3 id="cat-flats-title">Flats &amp; Multi-Storey Apartments</h3>
+          <p class="category-lead">
+            Structured unit-level inventory control designed for high-rise residential towers, multi-phase complexes, and urban apartment communities.
+          </p>
+          <ul class="category-features">
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Tower &amp; Floor-Wise Matrix:</strong>
+                <span>Organize multi-building developments into structured floor plans and unit grids for effortless navigation and rapid status checks.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Unit Configuration Visibility:</strong>
+                <span>Differentiate 1BHK, 2BHK, 3BHK, duplex, and penthouse units with live status indicators and real-time availability updates.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Sales Gallery &amp; HQ Synchronization:</strong>
+                <span>Keep apartment availability and sales information organized so teams can easily check the latest inventory details.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Eliminate Spreadsheet Confusion:</strong>
+                <span>Replace outdated manual spreadsheets with automated, role-controlled booking states and transparent team audit logs.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="category-footer">
+            <span class="category-tag">Multi-Tower Unit Synchronization</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- Testimonials (marquee-like) + YouTube demo -->
-    <section class="testimonials" aria-labelledby="testimonials-title">
-      <h2 id="testimonials-title">What our customers say</h2>
-
-      <!-- CSS-powered marquee (accessible alternative to deprecated <marquee>) -->
-      <div class="marquee" aria-hidden="false" role="region" aria-label="Customer testimonials">
-        <div class="marquee-track" aria-hidden="false">
-          <blockquote class="testimonial">
-            <p>"Estatemark eliminated booking conflicts from our process. Instant updates and crystal-clear layouts."
+    <!-- Mission & Why Choose Us Section -->
+    <section class="mission" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission-why-layout">
+          <div class="mission-why-left">
+            <h2 id="mission-heading">Why Estatemark?</h2>
+            <p class="section-desc">
+              Built for modern real estate builders and developers. Estatemark combines powerful real-time inventory management with intuitive simplicity,
+              enabling developers, sales managers, and field agents to manage plots, flats, and villas with absolute confidence and clarity.
             </p>
-            <cite>— A. Sharma, Project Manager</cite>
-          </blockquote>
-
-          <blockquote class="testimonial">
-            <p>"Agents can onboard in minutes. Real-time sync is a genuine game-changer for our sales team."</p>
-            <cite>— R. Patel, Sales Head</cite>
-          </blockquote>
-
-          <blockquote class="testimonial">
-            <p>"Reliable, responsive, and secure. The analytics in Pro plans are invaluable for decision-making."</p>
-            <cite>— N. Rao, Operations Manager</cite>
-          </blockquote>
-
-          <!-- Repeat items to create a continuous loop effect -->
-          <blockquote class="testimonial">
-            <p>"Estatemark eliminated booking conflicts from our process. Instant updates and crystal-clear layouts."
-            </p>
-            <cite>— A. Sharma, Project Manager</cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>"Agents can onboard in minutes. Real-time sync is a genuine game-changer for our sales team."</p>
-            <cite>— R. Patel, Sales Head</cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>"Reliable, responsive, and secure. The analytics in Pro plans are invaluable for decision-making."</p>
-            <cite>— N. Rao, Operations Manager</cite>
-          </blockquote>
-        </div>
-      </div>
-      <section class="about-video-section container">
-        <h2>About Estatemark</h2>
-        <div class="about-video-grid">
-          <div class="about-text">
-            <p>At Estatemark, we envision a future where property management is effortless, transparent, and truly
-              empowering. We're building the digital bridge between people and properties — transforming how plots,
-              flats, and villas are viewed, booked, and managed with intelligent technology and real-time cloud
-              visualization.</p>
-            <p>Estatemark simplifies every step of the property journey — from discovering available properties to
-              managing bookings, all in one seamless and trusted platform.</p>
-            <p>Our mission: Make every property smarter, every booking safer, and every decision clearer. With 99.9%
-              system availability and enterprise-grade security, you can trust us with your business.</p>
-            <a href="product.htm" class="cta secondary">Explore Features</a>
           </div>
-          <div class="about-video">
-            <div class="video-wrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/rH1fuBRE89A?si=Biarw2XI95IiJP9F"
-                title="YouTube video player" frameborder="0"
+          <div class="mission-why-right">
+            <div class="mission-video-wrapper">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rH1fuBRE89A?rel=0"
+                title="Estatemark Product Walkthrough" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
               </iframe>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- YouTube video (product demo) -->
-      <!--<div class="video-wrapper">
-      <div class="video-container">
-        <iframe
-          id="Estatemark-video"
-          src="https://www.youtube-nocookie.com/embed/RdUPs9e1bUk?si=x3R6FiXF7hc164qS"
-          title="youtube video player"
-          loading="lazy"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <div class="mission-grid">
+          <div class="mission-card">
+            <h3>✓ Why Choose Us</h3>
+            <ul>
+              <li><strong>Real-Time Sync:</strong> Instant data synchronization across all devices &mdash; eliminate double-bookings and outdated spreadsheets.</li>
+              <li><strong>Smart Analytics:</strong> Clear visibility into inventory availability, booking velocity, and project milestones.</li>
+              <li><strong>Role-Based Access:</strong> Secure, controlled permissions for developers, sales managers, field agents, and documentation teams.</li>
+              <li><strong>Multi-Project Support:</strong> Seamlessly manage multiple layouts, apartment towers, and villa communities from one portal.</li>
+              <li><strong>Mobile First:</strong> Full functionality on Android and iOS for sales teams presenting on-site or on the go.</li>
+              <li><strong>99.9% Uptime:</strong> Enterprise-grade cloud reliability you can depend on 24/7.</li>
+            </ul>
+          </div>
+          <div class="mission-card">
+            <h3>🎯 Our Vision</h3>
+            <p>
+              We are transforming real estate sales operations by replacing fragmented spreadsheets and manual phone calls with intelligent, real-time inventory certainty.
+              Every booking, every plot, every flat, and every villa &mdash; backed by synchronized cloud technology that works as hard as your sales force.
+            </p>
+            <p>
+              No more double-bookings. No more missed sales. No more customer disputes because availability wasn't updated. Just clarity, precision, and the confidence that every unit is accounted for.
+            </p>
+            <p>
+              When property management becomes effortless, real estate businesses thrive. That's why DeccanIDentity built Estatemark &mdash; for teams that refuse to compromise on accuracy.
+            </p>
+          </div>
+        </div>
       </div>
-    </div> -->
-
-
-
-
     </section>
 
-    <!-- Floating WhatsApp quick-link -->
-    <a aria-label="Chat on WhatsApp" class="whatsapp-float"
-      href="https://wa.me/919000035869?text=Hello%20Estatemark%20team%2C%20I%20would%20like%20to%20know%20more"
-      target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-whatsapp" aria-hidden="true"></i>
-    </a>
+    <!-- Testimonials (Accessible continuous marquee) -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">What our customers say</h2>
+
+      <div class="marquee" aria-hidden="false" role="region" aria-label="Customer testimonials">
+        <div class="marquee-track" aria-hidden="false">
+          <blockquote class="testimonial">
+            <p>"Estatemark eliminated booking conflicts from our process. Instant updates and crystal-clear layouts."</p>
+            <cite>&mdash; A. Sharma, Project Manager</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"Agents can onboard in minutes. Real-time sync is a genuine game-changer for our sales team."</p>
+            <cite>&mdash; R. Patel, Sales Head</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"Reliable, responsive, and secure. The analytics in Pro plans are invaluable for decision-making."</p>
+            <cite>&mdash; N. Rao, Operations Manager</cite>
+          </blockquote>
+
+          <!-- Repeat items to create a continuous loop effect -->
+          <blockquote class="testimonial">
+            <p>"Estatemark eliminated booking conflicts from our process. Instant updates and crystal-clear layouts."</p>
+            <cite>&mdash; A. Sharma, Project Manager</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"Agents can onboard in minutes. Real-time sync is a genuine game-changer for our sales team."</p>
+            <cite>&mdash; R. Patel, Sales Head</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"Reliable, responsive, and secure. The analytics in Pro plans are invaluable for decision-making."</p>
+            <cite>&mdash; N. Rao, Operations Manager</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
 
-
-    <!-- Footer -->
   </main>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div class="footer-about">
-        <h3>Estatemark</h3>
-        <p>The complete real-time property inventory and booking management system. Helps builders, developers, and
-          agents track availability, prevent double bookings, and scale their operations securely.</p>
+        <h3>EstateMark</h3>
+        <p class="footer-subtitle">Property Booking App</p>
+        <p>
+          The complete real-time property inventory and booking management system. Helps Real estate builders, developers, and agents track availability, prevent double bookings, and scale their operations securely.
+        </p>
       </div>
       <div class="footer-links">
         <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="product.htm">Product</a></li>
+          <li><a href="pricing.htm">Pricing</a></li>
+          <li><a href="about.htm">About Us</a></li>
           <li><a href="contact.htm">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-contact">
         <h4>Get in Touch</h4>
-        <p><i class="fa fa-phone"></i> <a href="tel:+919000035869">+91 90000 35869</a></p>
-        <p><i class="fa fa-envelope"></i> <a href="mailto:info@deccanidentity.com">info@deccanidentity.com</a></p>
-        <p><i class="fa fa-map-marker"></i> Deccan IDentity Software Pvt. Ltd.<br>Hyderabad, Telangana 501510, India</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+919000035869">+91 90000 35869</a></p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sales@estatemark.app">sales@estatemark.app</a></p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Adibatla, Hyderabad, Telangana 501510, India</p>
       </div>
       <div class="footer-social">
         <h4>Follow Us</h4>
         <div class="social-links">
-          <a href="https://wa.me/919000035869" title="WhatsApp" target="_blank" rel="noopener noreferrer"
-            aria-label="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+          <!-- WhatsApp icon with tooltip: +91 81860 35869 -->
+          <div class="footer-whatsapp-wrapper">
+            <a href="https://wa.me/918186035869" class="footer-whatsapp-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp: +91 81860 35869" id="footerWhatsappLink">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <span class="footer-whatsapp-tooltip" role="tooltip">+91 81860 35869</span>
+            </a>
+          </div>
           <a href="https://www.linkedin.com/in/deccanidentity" title="LinkedIn" target="_blank"
-            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           <a href="https://www.instagram.com/estatemark_deccanidentity" title="Instagram" target="_blank"
-            rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           <a href="https://www.youtube.com/@estatemark_dis" title="YouTube" target="_blank" rel="noopener noreferrer"
-            aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+            aria-label="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-downloads">
+          <h4 class="footer-download-caption">Download Now</h4>
+          <div class="footer-store-badges">
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.estatemark.app" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+              <img src="images/GooglePlayStore_img.png" alt="Get it on Google Play">
+            </a>
+            <a class="store-badge" href="https://apps.apple.com/us/app/estatemark-property-booking/id6759548018" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store">
+              <img src="images/iosStore.png" alt="Download on App Store">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -253,13 +430,16 @@
       <p class="copyright">&copy; 2026 Estatemark. All rights reserved.</p>
       <p class="privacy">
         <a href="privacy.htm">Privacy Policy</a> |
-        <a href="terms.htm">Terms &amp; Conditions</a>
+        <a href="terms.htm">Terms &amp; Conditions</a> |
+        Powered by <a href="https://deccanidentity.com/" target="_blank" rel="noopener noreferrer">DeccanIDentity</a>
       </p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/form-popup.js" defer></script>
   <script src="js/site.js" defer></script>
+  <script src="js/floating-widgets.js" defer></script>
 
   <!-- Popup for Request Demo -->
   <div id="popup" class="popup" aria-hidden="true" role="dialog" aria-labelledby="popup-title">
